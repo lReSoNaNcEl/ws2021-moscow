@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лендинг</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+</head>
+<body>
+<header class="header-layer">
+    <div class="header container">
+        <img src="https://shapka-youtube.ru/wp-content/uploads/2020/12/neon-headphones.jpg" class="header__logo">
+        <nav class="header__navmenu">
+            <a href="" class="navmenu__link">Главная</a>
+            <a href="" class="navmenu__link">Банки</a>
+            <a href="" class="navmenu__link">О нас</a>
+            <a href="" class="navmenu__link">Контакты</a>
+        </nav>
+        <a href="#" id="btnAuth" class="header__auth">Войти</a>
+    </div>
+</header>
+
+<section class="slider-layer">
+    <div class="slider container">
+        <div id="sliderPrev" class="slider__prev"></div>
+        <div id="slider" class="slider__init">
+            <div id="sliderTrack" class="slider__track">
+                <img class="slider__item" src="https://get.wallhere.com/photo/anime-anime-girls-Makise-Kurisu-Steins-Gate-screenshot-mangaka-2856x4096-px-577267.jpg"/>
+                <img class="slider__item" src="https://i.pinimg.com/originals/b6/05/d4/b605d41ee18ea31a213d388ff4263b43.jpg"/>
+                <img class="slider__item" src="https://static2.aniimg.com/upload/20170613/769/S/P/e/SPeGEF.jpg"/>
+                <img class="slider__item" src="https://pbs.twimg.com/media/EG7Lk0nU8AEj0ci.jpg"/>
+                <img class="slider__item" src="https://images.wallpaperscraft.ru/image/neon_zelenyj_svetovoe_graffiti_121082_2560x1600.jpg"/>
+                <img class="slider__item" src="https://images.wallpaperscraft.ru/image/abstraktsiia_svet_koltsa_156731_1366x768.jpg"/>
+            </div>
+        </div>
+        <div id="sliderNext" class="slider__next"></div>
+    </div>
+</section>
+<section>bank</section>
+<section class="tabs-layer">
+    <div class="tabs container">
+        <ul class="tabs__list">
+            <li class="tabs__item" data-id="1">1 tab</li>
+            <li class="tabs__item" data-id="2">2 tab</li>
+            <li class="tabs__item" data-id="3">3 tab</li>
+        </ul>
+        <ul class="tabs__result">
+            <li data-id="1" class="tabs__value active">1 tab value</li>
+            <li data-id="2" class="tabs__value">2 tab value</li>
+            <li data-id="3" class="tabs__value">3 tab value</li>
+        </ul>
+    </div>
+</section>
+
+<section class="steps-layer">
+    <div class="steps container">
+        <div data-next="1" class="steps__item active">step 1
+            <button data-next="1" class="steps__next">Next</button>
+        </div>
+        <div data-next="2" class="steps__item">step 2
+            <button data-next="2" class="steps__next">Next</button>
+        </div>
+        <div data-next="3" class="steps__item">
+            step 3
+            <button data-next="3" class="steps__next">Next</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-layer">
+    <div class="footer">
+        <input maxlength="20" required pattern="\+7 [0-9]{3}" type="tel">
+    </div>
+</footer>
+
+<script> </script>
+<script src="./src/core/Slider.js"></script>
+<script src="./src/core/Modal.js"></script>
+<script src="./src/core/ModalAuth.js"></script>
+<script src="./src/index.js"></script>
+</body>
+</html>

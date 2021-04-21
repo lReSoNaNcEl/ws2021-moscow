@@ -1,0 +1,5 @@
+@import "modal.css";
+
+.modal__form {
+    z-index: inherit;
+}
